@@ -1,0 +1,32 @@
+require 'bindata'
+
+class Header < BinData::Record
+  endian :little
+
+  uint16 :number_of_items
+end
+
+class Resource < BinData::Record
+  endian :little
+
+  string :filename, :read_length => 13
+  string :name2, :read_length => 9
+  uint32 :resource_offset
+  uint32 :resource_size
+end
+
+task :unpack do
+  `mkdir resources`
+  archive = '../nikki/nikki-98/NIKKI.PAK'
+  File.open(archive, 'rb') do |input|
+    header = Header.read(input)
+    puts "#{header.number_of_items} resources"
+    header.number_of_items.times do
+      r = Resource.read(input)
+      puts r.inspect
+      command = "dd skip=#{r.resource_offset} count=#{r.resource_size} if=#{archive} of=resources/#{r.filename.strip} bs=1"
+      puts command
+      raise "Failed!" unless system(command)
+    end
+  end
+end

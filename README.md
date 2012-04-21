@@ -8,6 +8,8 @@ You can run everything today in DosBox.
 
 64kb intro with real-time software phong rendering.
 
+![https://img.skitch.com/20120421-k7hg96yiahnjp98ii69utn3gu1.jpg](https://img.skitch.com/20120421-k7hg96yiahnjp98ii69utn3gu1.jpg)
+
 The sound is buggy for historical reasons (notes with pitch too high are peaked to a lower pitch, and tempo sync is broken), but I will attempt to fix this.
 
 #### Nikki (1996-1998)

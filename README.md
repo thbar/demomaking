@@ -44,3 +44,8 @@ MOUNT D: ~/git/demomaking
 ### Things I want to do
 
 - Unpack and disassemble Obez (tricky)
+
+### Potentially interesting links
+
+* [Eric Fry's IDA/DOSBox debugger plugin](https://github.com/wjp/idados)
+* [HexRays debugging / decompiling tools](https://www.hex-rays.com/index.shtml)

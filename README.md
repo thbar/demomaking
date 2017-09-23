@@ -8,7 +8,7 @@ You can run everything today in DosBox.
 
 64kb intro with real-time software phong rendering.
 
-<img src="https://raw.github.com/thbar/demomaking/master/extracts/Obez-Blue.gif?v1" width="640">
+<img src="https://raw.github.com/thbar/demomaking/master/extracts/Obez-Blue-Short.gif?v1" width="100">
 
 The sound is buggy for historical reasons (notes with pitch too high are peaked to a lower pitch, and tempo sync is broken), but I will attempt to fix this.
 

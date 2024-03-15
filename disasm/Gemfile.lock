@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     bindata (2.3.0)
+    rake (13.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bindata
+  rake
 
 BUNDLED WITH
-   1.11.2
+   2.2.34
